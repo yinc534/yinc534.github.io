@@ -5,7 +5,6 @@ body{
     background: -webkit-linear-gradient(rgb(255,160,122), rgb(173,216,230)); 
     background: -moz-linear-gradient(rgb(255,160,122), rgb(173,216,230)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgb(255,160,122), rgb(173,216,230)); /* Standard syntax (must be last) */
-    overflow:hidden;
     font-family: 'Roboto', sans-serif;
     display:inline-block;
 }
@@ -28,7 +27,7 @@ body{
 	font-size:30px;
 }
 
-a{
+a:link{
 	text-decoration:none;
 }
 
@@ -38,6 +37,10 @@ a:visited{
 
 a:hover{
 	color:white;
+}
+
+a:active{
+	color:red;
 }
 
 .container-studio{
@@ -96,7 +99,6 @@ a:hover{
 
 	position:absolute;
 	margin-left:200px;
-	top:100px;
 	font-size: 40px;
 	font-family: 'Oswald', sans-serif;
 

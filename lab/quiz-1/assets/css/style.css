@@ -1,0 +1,42 @@
+*{ box-sizing:border-box; }
+
+.yellow{
+	width: 768px;
+	height:668px;
+	background:#F8E71C;
+	font-size: 0;
+	margin:auto;
+	padding:100px;
+}
+
+
+.blue{
+	width:568px;
+	height:568px;
+	background:#202665;
+	padding:100px;
+	}
+
+.red{
+	width:768px;
+	height:100px;
+	background:#D0021B;
+	margin:auto;
+	padding-top:20px;
+}
+
+.green{
+	width:368px;
+	height:368px;
+	background:#009E4F;
+	padding: 20px;
+
+}
+
+.small-red{
+	width:328px;
+	height:67px;
+	background:#ED2025;
+	margin-bottom:20px;
+}
+

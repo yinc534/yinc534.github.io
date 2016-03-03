@@ -1,9 +1,3 @@
-body{
-	margin:0;
-	padding:0;
-	font-size:0;
-}
-
 .word-wrapper{
 	display:inline-block;
 	margin-right:60px;
@@ -13,6 +7,7 @@ body{
 	width:150px;
 	height:200px;
 	position:relative;
+	display:inline-block;
 }
 
 .letter-wrapper{
@@ -20,45 +15,23 @@ body{
 	margin: 0 15px 60px 15px;
 }
 
-.left-vertical-bar{
-	width:30px;
-	height:200px;
-	background-color: #000;
+.bar{
 	position:absolute;
-	top:0;
-	left:0;
-	z-index:1;
 }
 
-.right-vertical-bar{
-	width:30px;
-	height:200px;
-	background-color: #ff0;
-	position:absolute;
-	top:0px;
-	right:0px;
-	z-index:3;
-}
+.vertical{width:30px; height:200px;}
+.horizontal{width:150px;height:30px;}
 
-.top-horizontal-bar{
-	width:150px;
-	height:30px;
-	background-color:#f00;
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:2;
-}
 
-.mid-horizontal-bar{
-	width:150px;
-	height:30px;
-	background-color:#00f;
-	position:absolute;
-	z-index:4;
-	top:85px;
-	left:0;
-}
+.red{background-color:#f00;}
+.black{background-color: #000;}
+.blue{background-color:#00f;}
+.yellow{background-color:#ff0;}
+
+.a-left{top:0; left:0; z-index:1;}
+.a-right{top:0px; right:0px; z-index:3;}
+.a-top{top:0;left:0;z-index:2;}
+.a-mid{z-index:4; top:85px; left:0;}
 
 /* Position: absolute, relative, fixed
 

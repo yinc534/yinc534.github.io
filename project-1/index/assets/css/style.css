@@ -1,0 +1,254 @@
+*{ box-sizing:border-box; }
+
+body{
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size:25px;
+	margin:0;
+	padding:0;
+}
+
+.title-box{
+	margin-top:0;
+	margin-left:9px;
+}
+
+h1{
+	margin-top:35px;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	font-size:30px;
+	margin-left:30px;
+	padding:4px;
+	font-weight:normal;
+	border: 2px solid black;
+	display:inline-block;
+}
+
+nav{
+	width:150px;
+	margin-top:0;
+	position:absolute;
+	display:inline-block;
+}
+
+.nav-container{
+	width:150px;
+	margin-top:35px;
+  }
+
+.boxed{
+	padding:3px;
+	border: 2px solid black;
+	margin-bottom:12px;
+}
+
+a.a-nav:link {
+    text-decoration:none;
+	color:#000;
+	border:1px solid transparent;
+}
+
+a.a-nav:visited {
+    color:#000;
+}
+
+a.a-nav:hover {
+    border: 1px solid red;
+}
+
+a.a-nav:active {
+    border: 1px solid blue;
+}
+
+a.b-nav:link {
+    text-decoration:none;
+	color:#000;
+}
+
+.hidden{
+	visibility:hidden;
+}
+
+a.b-nav:hover{
+	text-decoration:none;
+	background-color:yellow;
+}
+a.b-nav:visited{
+	text-decoration:none;
+	background-color:none;
+	color:#000;
+}
+
+li{
+	display:inline-block;
+	list-style-type:none;
+}
+
+.container-wrapper{
+	margin-top:35px;
+	margin-left:240px;
+	display:inline-block;
+}
+
+.container{
+	width:606px;
+	height: 602px;
+	font-size:0;
+	padding:1px;
+	background-color: #000;
+	display:inline-block;
+}
+
+.box{
+	width:120px;
+	height:120px;
+	display:inline-block;
+	margin-right:1px;
+	background-color:#fff;
+}
+
+.box-right{
+	display:inline-block;
+	width:120px;
+	height:120px;
+	margin-top:1px;
+	padding:10px;
+	background-color:#fff;
+}
+
+.e{
+	display:inline-block;
+	width:120px;
+	height:120px;
+	background-color:#fff;
+}
+
+.ceramics{
+	background-color:#989898;
+}
+
+a.ceramics:hover {
+	background:url("../img/textures/ceramic-bw.png");
+}
+
+.wax{
+	background-color: #000;
+}
+
+a.wax:hover {
+	background:url("../img/textures/wax-bw.png");
+}
+
+.paper{
+	background-color: #d8d8d8;
+}
+
+a.paper:hover {
+	background:url("../img/textures/paper-bw.png");
+}
+
+.pp{
+	background-color: #707070;
+}
+
+a.pp:hover {
+	background:url("../img/textures/pp.png");
+}
+
+.hdpe{
+	background-color: #a8a8a8;
+}
+
+a.hdpe:hover {
+	background:url("../img/textures/hdpe.jpg");
+}
+
+.other{
+	background-color: #000;
+}
+
+a.other:hover {
+	background:url("../img/textures/other.png");
+}
+
+.metal{
+	background-color: #989898;
+}
+
+a.metal:hover {
+	background:url("../img/textures/metal.jpg");
+}
+
+.misc{
+	background-color: #202020;
+}
+
+a.misc:hover {
+	background:url("../img/textures/misc.jpg");
+}
+
+a.cotton:hover{
+	background-color: #f8f8f8;
+}
+
+.cotton:hover {
+	background:url("../img/textures/cotton-bw.jpg");
+}
+
+a.pete:hover{
+	background-color: #c8c8c8;
+}
+
+a.pete:hover {
+	background:url("../img/textures/pete.jpg");
+}
+
+.amethyst{
+	background-color: #383838;
+}
+
+a.amethyst:hover {
+	background:url("../img/textures/crystals.jpg");
+}
+
+a.glass:hover {
+	background:url("../img/textures/glass.jpg");
+}
+
+a.leather:hover {
+	background:url("../img/textures/leather.png");
+}
+
+a.electronics:hover {
+	background:url("../img/textures/electronics-bw.png");
+}
+
+
+img{
+	max-width:250px;
+	margin:10px;
+}
+
+.item-container{
+	padding:5px;
+	width:120px;
+	height:120px;
+}
+
+.key-container{
+	width:200px;
+	margin-top:0px;
+	border-top:0px;
+	display:inline-block;
+}
+
+.about-container{
+	width:200px;
+	margin-top:0px;
+	border-top:0px;
+	display:inline-block;
+}
+
+.footer{
+	padding-bottom:110px;
+}

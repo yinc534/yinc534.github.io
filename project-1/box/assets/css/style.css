@@ -1,0 +1,173 @@
+*{ box-sizing:border-box; }
+
+body{
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size:25px;
+	margin:0;
+	padding:0;
+}
+
+.title-box{
+	margin-top:0;
+	margin-left:15px;
+	left:0px;
+	position:absolute;
+}
+
+h1, h2{
+	font-size:25px;
+	padding:3px;
+	margin-top:8px;
+	font-weight:normal;
+	border: 2px solid black;
+}
+
+nav{
+	margin-top:20px;
+	margin-left:-25px;
+	position:absolute;
+	display:inline-block;
+}
+
+.boxed{
+	padding:3px;
+	border: 2px solid #000;
+}
+
+.button{
+	margin-top:15px;
+	margin-bottom:5px;
+}
+
+.boxed-circle{
+	padding:5px;
+	border: 2px solid #000;
+	border-radius:25px;
+}
+
+a.a-nav:link {
+    text-decoration:none;
+ 	color:#000;
+	border:1px solid transparent;
+}
+
+a.a-nav:visited {
+    color:#000;
+}
+
+a.a-nav:active {
+    border: 1px solid blue;
+}
+
+a.b-nav:link {
+    text-decoration:none;
+	color:#000;
+	margin:0;
+}
+
+.hidden{
+	visibility:hidden;
+}
+
+a.b-nav:hover{
+	text-decoration:none;
+	background-color:yellow;
+}
+a.b-nav:visited{
+	text-decoration:none;
+	background-color:none;
+	color:#000;
+}
+
+li{
+	display:inline-block;
+	list-style-type:none;
+}
+
+.container-wrapper{
+	margin-top:8px;
+	margin-left:280px;
+	display:inline-block;
+	width:618px;
+}
+
+.container{
+	width:612px;
+	height: 612px;
+	font-size:0;
+	padding:2px;
+	background-color: #000;
+	display:inline-block;
+}
+
+.ceramics{
+	background-color:#989898;
+}
+
+.wax{
+	background-color: #383838;
+}
+
+.paper{
+	background-color: #e0e0e0;
+}
+
+.pp{
+	background-color: #585858;
+}
+
+.hdpe{
+	background-color: #707070;
+}
+
+.other{
+	background-color: #484848;
+}
+
+.metal{
+	background-color: #989898;
+}
+
+.misc{
+	background-color: #383838;
+}
+
+.cotton{
+	background: #f8f8f8;
+}
+
+.pete{
+	background: #c0c0c0;
+}
+
+.amethyst{
+	background: #383838;
+}
+
+.glass {
+	background:#585858;
+}
+
+.leather{
+	background:#909090;
+}
+
+.electronics{
+	background:#383838;
+}
+
+img{
+	max-width:250px;
+	margin:10px;
+}
+
+.item-container{
+	padding:5px;
+	width:120px;
+	height:120px;
+}
+
+
+.footer{
+	padding-bottom:110px;
+}

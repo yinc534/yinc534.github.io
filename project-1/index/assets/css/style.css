@@ -9,51 +9,49 @@ body{
 
 .title-box{
 	margin-top:0;
-	margin-left:9px;
+	margin-left:15px;
+	left:0px;
+	position:absolute;
 }
 
-h1{
-	margin-top:35px;
-	letter-spacing: 1px;
-	margin-bottom: 0;
-	font-size:30px;
-	margin-left:30px;
-	padding:4px;
+h1, h2{
+	font-size:25px;
+	padding:3px;
+	margin-top:8px;
 	font-weight:normal;
 	border: 2px solid black;
-	display:inline-block;
 }
 
 nav{
-	width:150px;
-	margin-top:0;
+	margin-top:22px;
+	margin-left:-25px;
+	width:300px;
 	position:absolute;
 	display:inline-block;
 }
 
-.nav-container{
-	width:150px;
-	margin-top:35px;
-  }
-
 .boxed{
 	padding:3px;
-	border: 2px solid black;
-	margin-bottom:12px;
+	border: 2px solid #000;
 }
+
+.boxed-circle{
+	padding:5px;
+	position:relative;
+	top:-5px;
+	border: 2px solid #000;
+	border-radius:25px;
+}
+
 
 a.a-nav:link {
     text-decoration:none;
-	color:#000;
+ 	color:#000;
 	border:1px solid transparent;
 }
 
 a.a-nav:visited {
     color:#000;
-}
-
-a.a-nav:hover {
-    border: 1px solid red;
 }
 
 a.a-nav:active {
@@ -63,6 +61,7 @@ a.a-nav:active {
 a.b-nav:link {
     text-decoration:none;
 	color:#000;
+	margin:0;
 }
 
 .hidden{
@@ -85,16 +84,17 @@ li{
 }
 
 .container-wrapper{
-	margin-top:35px;
-	margin-left:240px;
+	margin-top:8px;
+	margin-left:280px;
 	display:inline-block;
+	width:618px;
 }
 
 .container{
-	width:606px;
-	height: 602px;
+	width:612px;
+	height: 612px;
 	font-size:0;
-	padding:1px;
+	padding:2px;
 	background-color: #000;
 	display:inline-block;
 }
@@ -103,7 +103,16 @@ li{
 	width:120px;
 	height:120px;
 	display:inline-block;
-	margin-right:1px;
+	margin-right:2px;
+	margin-top:2px;
+	background-color:#fff;
+}
+
+.box-one{
+	width:120px;
+	height:120px;
+	display:inline-block;
+	margin-right:2px;
 	background-color:#fff;
 }
 
@@ -111,7 +120,7 @@ li{
 	display:inline-block;
 	width:120px;
 	height:120px;
-	margin-top:1px;
+	margin-top:2px;
 	padding:10px;
 	background-color:#fff;
 }
@@ -132,7 +141,7 @@ a.ceramics:hover {
 }
 
 .wax{
-	background-color: #000;
+	background-color: #383838;
 }
 
 a.wax:hover {
@@ -140,7 +149,7 @@ a.wax:hover {
 }
 
 .paper{
-	background-color: #d8d8d8;
+	background-color: #e0e0e0;
 }
 
 a.paper:hover {
@@ -148,7 +157,7 @@ a.paper:hover {
 }
 
 .pp{
-	background-color: #707070;
+	background-color: #585858;
 }
 
 a.pp:hover {
@@ -156,7 +165,7 @@ a.pp:hover {
 }
 
 .hdpe{
-	background-color: #a8a8a8;
+	background-color: #707070;
 }
 
 a.hdpe:hover {
@@ -164,7 +173,7 @@ a.hdpe:hover {
 }
 
 .other{
-	background-color: #000;
+	background-color: #484848;
 }
 
 a.other:hover {
@@ -180,23 +189,23 @@ a.metal:hover {
 }
 
 .misc{
-	background-color: #202020;
+	background-color: #383838;
 }
 
 a.misc:hover {
 	background:url("../img/textures/misc.jpg");
 }
 
-a.cotton:hover{
-	background-color: #f8f8f8;
+a.cotton{
+	background: #f8f8f8;
 }
 
-.cotton:hover {
+a.cotton:hover {
 	background:url("../img/textures/cotton-bw.jpg");
 }
 
-a.pete:hover{
-	background-color: #c8c8c8;
+a.pete{
+	background: #c0c0c0;
 }
 
 a.pete:hover {
@@ -204,7 +213,7 @@ a.pete:hover {
 }
 
 .amethyst{
-	background-color: #383838;
+	background: #383838;
 }
 
 a.amethyst:hover {
@@ -215,14 +224,25 @@ a.glass:hover {
 	background:url("../img/textures/glass.jpg");
 }
 
+a.glass {
+	background:#585858;
+}
+
 a.leather:hover {
 	background:url("../img/textures/leather.png");
+}
+
+a.leather{
+	background:#909090;
 }
 
 a.electronics:hover {
 	background:url("../img/textures/electronics-bw.png");
 }
 
+a.electronics{
+	background:#383838;
+}
 
 img{
 	max-width:250px;
@@ -240,13 +260,66 @@ img{
 	margin-top:0px;
 	border-top:0px;
 	display:inline-block;
+
+}
+
+.arrow-bar{
+   width:2px;
+   height:595px;
+   background-color: #000;
+   left:950px;
+   top:10px;
+   position:absolute;
+}
+
+.arrow-bar-hor{
+   width:600px;
+   height:2px;
+   left:280px;
+   top:670px;
+   background-color: #000;
+   position:absolute;
+}
+
+.arrow-right{
+	width:0px;
+	height:0px;
+	border-bottom:10px solid transparent;
+	border-top:10px solid transparent;
+	border-left:15px solid #000;
+	left:590px;
+	top:-10px;
+	position:absolute;
+}
+
+.arrow-down{
+	width:0px;
+	height:0px;
+	border-bottom:10px solid transparent;
+	border-top:10px solid transparent;
+	border-left:15px solid #000;
+	transform:rotate(90deg);
+	top:580px;
+	left:-6px;
+	position:absolute;
+}
+
+.key-text{
+	width:500px;
+	font-size: 18px;
+	margin-left:-470px;
+	display:inline-block;
 }
 
 .about-container{
-	width:200px;
-	margin-top:0px;
-	border-top:0px;
+	width:232px;
+	height:800px;
+	left:15px;
+	top:153px;
+	font-size:13px;
+	position:absolute;
 	display:inline-block;
+	line-height:1.2em;
 }
 
 .footer{

@@ -7,28 +7,48 @@ body{
 	padding:0;
 }
 
-.title-box{
-	margin-top:0;
-	margin-left:15px;
-	left:0px;
-	position:absolute;
-}
-
-h1, h2{
+.h1, h2{
 	font-size:25px;
 	padding:3px;
-	margin-top:8px;
+	margin-top:12px;
 	font-weight:normal;
 	border: 2px solid black;
 }
 
+h3{
+	font-size:18px;
+	padding:3px;
+	margin-top:8px;
+	font-weight:normal;
+	width:250px;
+	margin-bottom:5px;
+}
+
+a.title:link{
+	text-decoration: none;
+	color:#000;
+}
+a.title:visited{
+	text-decoration: none;
+	color:#000;
+}
+
+a.title:hover{
+	border: 2px solid #000;
+	border-radius:25px;
+	padding:3px;
+	background-color: yellow;
+}
+
+
 nav{
-	margin-top:22px;
+	margin-top:-12px;
 	margin-left:-25px;
-	width:300px;
+	width:250px;
 	position:absolute;
 	display:inline-block;
 }
+
 
 .boxed{
 	padding:3px;
@@ -38,10 +58,11 @@ nav{
 .boxed-circle{
 	padding:5px;
 	position:relative;
-	top:-5px;
+	top:-6px;
 	border: 2px solid #000;
 	border-radius:25px;
 }
+
 
 
 a.a-nav:link {
@@ -85,7 +106,7 @@ li{
 
 .container-wrapper{
 	margin-top:8px;
-	margin-left:280px;
+	margin-left:285px;
 	display:inline-block;
 	width:618px;
 }

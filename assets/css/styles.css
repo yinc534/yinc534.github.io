@@ -1,30 +1,39 @@
 body{
-
-	height:1000px;
-    background: red; 
-    background: -webkit-linear-gradient(rgb(255,160,122), rgb(173,216,230)); 
-    background: -moz-linear-gradient(rgb(255,160,122), rgb(173,216,230)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgb(255,160,122), rgb(173,216,230)); /* Standard syntax (must be last) */
-    font-family: 'Roboto', sans-serif;
-    display:inline-block;
+	font-family:'Roboto',sans-serif;
+	font-size:24px;
+	background-color:#000;
+	color:#fff;
 }
 
 
-.container-crystal{
-
-	margin-left:50px;
-	padding-top:20px;
-	font-size:30px;
-
+ol{
+	list-style:none;
+	line-height:140%;
 }
 
-.container-ci{
+.wrapper{
+	margin-left:350px;
+	margin-top:150px;
+}
 
-	margin-left:1150px;
-	margin-right:30px;
-	position:absolute;
-	bottom:30px;
-	font-size:30px;
+.button{
+	border: 5px solid #fff;
+	display:inline-block;
+	border-radius:25px;
+	padding:3px;
+	margin-right:50px;
+}
+
+.button-2{
+	border: 3px solid #fff;
+	display:inline-block;
+	border-radius:25px;
+	padding:8px;
+	margin-right:50px;
+}
+
+.classes{
+	font-size:100px;
 }
 
 a:link{
@@ -32,74 +41,13 @@ a:link{
 }
 
 a:visited{
-	color:black;
+	color:#fff;
 }
 
 a:hover{
-	color:white;
+	color:yellow;
 }
 
 a:active{
 	color:red;
-}
-
-.container-studio{
-
-	font-size:100px;
-	font-family: 'Oswald', sans-serif;
-	margin-left:50px;
-	bottom:30px;
-	position:absolute;
-
-}
-
-.container-back{
-
-	font-size:50px;
-	font-family: 'Oswald', sans-serif;
-	margin-left:0px;
-	bottom:30px;
-	position:absolute;
-
-}
-
-
-.container-lab{
-
-
-	font-size:100px;
-	font-family: 'Oswald', sans-serif;
-	margin-left:1200px;
-	top:30px;
-	position:absolute;
-
-}
-
-.home-slash{
-
-	position:absolute;
-	right:600px;
-	top:80px;
-	font-size: 300px;
-	font-family: 'Oswald', sans-serif;
-
-}
-
-.home-slash-2{
-
-	position:absolute;
-	margin-left:1280px;
-	top:50px;
-	font-size: 30px;
-	font-family: 'Oswald', sans-serif;
-
-}
-
-.container-project{
-
-	position:absolute;
-	margin-left:200px;
-	font-size: 40px;
-	font-family: 'Oswald', sans-serif;
-
 }

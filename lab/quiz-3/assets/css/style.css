@@ -1,0 +1,5 @@
+body{background-color: yellow; font-size:18px;margin:50px;font-family:sans-serif;}
+ul{list-style:none;text-align:center;}
+li{display:inline;margin-right:50px;}
+.show-value{border:1px solid black; padding:5px; 
+display:inline-block;margin-left:50%;width:50px;}

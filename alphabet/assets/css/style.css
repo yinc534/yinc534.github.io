@@ -2,5 +2,27 @@ body{
 	margin:0;
 	padding:50px;
 	font-size:0;
+	background-color:#F8E71C;
 }
 
+/*==============wrapper===============*/
+.word-wrapper{
+	display:inline-block;
+	margin-right:60px;
+}
+.letter{
+	width:35px;
+	height:54px;
+	position:relative;
+}
+
+.letter-wrapper{
+	display:inline-block;
+	margin: 0 15px 45px 15px;
+}
+.baseline{
+	display:inline-block;
+	width:900px;
+	height:54px;
+	border:1px red solid;
+}

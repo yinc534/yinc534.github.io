@@ -6,23 +6,35 @@ body{
 }
 
 /*==============wrapper===============*/
-.word-wrapper{
-	display:inline-block;
-	margin-right:60px;
-}
 .letter{
 	width:35px;
 	height:54px;
 	position:relative;
+	z-index:1;
+	display:inline-block;
+}
+
+.shadow-wrap{
+	position:absolute;
+	display: inline-block;
 }
 
 .letter-wrapper{
 	display:inline-block;
-	margin: 0 15px 45px 15px;
+	margin: 0 15px 30px 15px;
+	width:40px;
+	position:relative;
 }
 .baseline{
 	display:inline-block;
-	width:900px;
+	width:500px;
 	height:54px;
-	border:1px red solid;
+	
+}
+
+.blur-case{
+	position:relative;
+	left:700px;
+	top:-340px;
+	-webkit-filter:blur(8px);
 }

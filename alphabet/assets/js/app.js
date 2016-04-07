@@ -7,19 +7,18 @@ $(document).ready(function() {
 window.onload = runClock;
 
 
-function checkTime() {
+function record_time() {
 	now = new Date();
 	var date = now.getDate();
 	var month = now.getMonth() + 1;
 	var hours = now.getHours();
 	var minutes = now.getMinutes();
 
-	return {
-		hours : hours,
-		minutes : minutes,
-		date : date,
-		month : month,
-	}
+	var current_time = month + '/' + date;
+
+	$.cookie('current_time', current_time);
+
+	
 }
 
 
@@ -30,7 +29,7 @@ function runClock() {
 	var letterClass = []
 
 	updateClock();
-	setInterval(updateClock, 3000);
+	// setInterval(updateClock, 3000);
 
 	function updateClock() {
 		now = checkTime();
@@ -41,8 +40,4 @@ function runClock() {
 
 	}
 }
-
-
-document.cookie="username=John Doe";
-
 

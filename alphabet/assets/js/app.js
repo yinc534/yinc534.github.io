@@ -2,9 +2,10 @@ $(document).ready(function() {
 
 	$('.letter').addClass("hide")
 
-})
+});
 
-window.onload = runClock;
+record_time();
+run_clock();
 
 
 function record_time() {
@@ -22,22 +23,24 @@ function record_time() {
 }
 
 
-function runClock() {
+function run_clock() {
 
-	var now = checkTime();
-	var letter = document.getElementById('letter');
-	var letterClass = []
+	console.log($.cookie("current_time"));
 
-	updateClock();
-	// setInterval(updateClock, 3000);
+	// var now = checkTime();
+	// var letter = document.getElementById('letter');
+	// var letterClass = []
 
-	function updateClock() {
-		now = checkTime();
+	// updateClock();
+	// // setInterval(updateClock, 3000);
 
-		if (now.date == 7 && now.month == 4) {
-			console.log($.cookie("username"));
-		}
+	// function updateClock() {
+	// 	now = checkTime();
 
-	}
+	// 	if (now.date == 7 && now.month == 4) {
+	// 		console.log($.cookie("username"));
+	// 	}
+
+	// }
 }
 

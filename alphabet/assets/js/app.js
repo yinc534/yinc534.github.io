@@ -1,8 +1,8 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
-	$('.letter').addClass("hide")
+// 	$('.letter').addClass("hide")
 
-});
+// });
 
 record_time();
 run_clock();

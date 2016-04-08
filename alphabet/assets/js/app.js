@@ -15,11 +15,10 @@ function record_time() {
 	var hours = now.getHours();
 	var minutes = now.getMinutes();
 
-	var current_time = month + '/' + date;
+	var current_time = hours + ':' + minutes;
 
 	$.cookie('current_time', current_time);
 
-	
 }
 
 

@@ -16,10 +16,13 @@ function record_time() {
 	var minutes = now.getMinutes();
 
 	var current_time = hours + ':' + minutes;
-
-	$.cookie('current_time', current_time);
+	
+	var timeStamp = Math.floor(Date.now() / 1000);
+	$.cookie('current_time', timeStamp);
 
 }
+
+
 
 
 function run_clock() {
@@ -42,4 +45,5 @@ function run_clock() {
 
 	// }
 }
+
 

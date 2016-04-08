@@ -14,7 +14,8 @@ body{
 	display:inline-block;
 }
 
-.hide{ display: none; }
+.hide{ display: none;}
+
 
 .shadow-wrap{
 	position:absolute;

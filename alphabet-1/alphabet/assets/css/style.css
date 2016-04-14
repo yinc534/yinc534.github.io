@@ -1,0 +1,52 @@
+body{
+	margin:0;
+	padding:50px;
+	font-size:0;
+	background-color:#F8E71C;
+}
+
+/*==============wrapper===============*/
+.letter{
+	width:35px;
+	height:54px;
+	position:relative;
+	z-index:1;
+	display:inline-block;
+}
+
+.hide{ display: none;}
+
+.shadow-wrap{position:absolute; display: inline-block;
+}
+
+.letter-wrapper{
+	display:inline-block;
+	margin: 0 15px 30px 15px;
+	width:40px;
+	position:relative;
+}
+.baseline{
+	display:inline-block;
+	width:500px;
+	height:54px;
+}
+
+.blur-case{ -webkit-filter:blur(4px); }
+
+.page-container{position:relative; width:500px;height:500px;}
+
+.eye-container{
+	position:absolute;
+	top:619px;
+
+	}
+
+
+
+	.blur-test {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	font-size: 10px;
+}
+

@@ -13,6 +13,25 @@ body{
 	z-index:1;
 	display:inline-block;
 }
+.page-container{position:relative; width:1420px;height:500px;}
+
+.eye-container{ position:absolute; left:41px; top:660px;}
+
+.x-container{ position:absolute; right:30px; top:30px;}
+
+.letter-wrapper{
+	display:inline-block;
+	margin: 0 15px 15px 15px;
+	padding-left:0px;
+	width:35px;
+	position:relative;
+}
+
+.letter-spacer{
+	display:inline-block;
+	margin: 0 15px 0px 15px;
+	position:relative;
+}
 
 .hide{ display: none;}
 

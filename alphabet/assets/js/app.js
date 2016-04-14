@@ -1,9 +1,3 @@
-$(document).ready(function() {
-
-	$('.letter').toggle("hide");
-
-});
-
 record_time();
 run_clock();
 
@@ -14,27 +8,22 @@ function run_clock() {
     
     var elapsed = timeStamp - $.cookie("current_time");
 
-    console.log(elapsed);
+    // console.log(elapsed);
     var lastvisited = timeConverter($.cookie("current_time"));
-    
-    for (i=0; i < lastvisited.length; i++) {
-      console.log(lastvisited[i]);
+    // var lastvisited = 'crystal';
 
-      $(".letter").append(lastvisited[i]);
-    }
+    for (i = 0; i < lastvisited.length; i++) {
+      // console.log(lastvisited[i]);
+      if (lastvisited[i] != ' ') {
+      	var letter = '.letter-wrapper.' + lastvisited[i],
+      		to_clone = $(letter).clone();
 
-      if (lastvisited[i] == "E") {
-
-        $(".e").show();
+      	$('.baseline').append(to_clone);
       }
-
-      else if (lastvisited[i] == "p") {
-
-        $(".p").show();
-   }
+    }
   }
 
-console.log(timeConverter($.cookie("current_time")));
+// console.log(timeConverter($.cookie("current_time")));
 
 function record_time() {
 	now = new Date();
@@ -51,11 +40,11 @@ function record_time() {
 
 var bluramount = elapsed * .1;
 	var newval = "blur(" + bluramount + "px)";
-$(".letter").css("-webkit-filter",newval);
+$(".letter-wrapper").css("-webkit-filter",newval);
 
 }
 
-console.log($.cookie("current_time"));
+// console.log($.cookie("current_time"));
 
 function timeConverter(UNIX_timestamp){
   var a = new Date(UNIX_timestamp * 1000);

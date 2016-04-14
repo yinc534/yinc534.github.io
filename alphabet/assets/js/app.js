@@ -25,7 +25,7 @@ function run_clock() {
 
       if (lastvisited[i] == "E") {
 
-        $(".e").show();
+        $(".e")append(lastvisited[i]);
       }
 
       else if (lastvisited[i] == "p") {

@@ -213,7 +213,7 @@ function run_clock() {
       }
 
       if (lastvisited[i] == ' ') {
-        $('.letter').toggle("hide");
+        $('.letter').removeClass("hide");
       }
 
     }

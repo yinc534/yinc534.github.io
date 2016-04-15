@@ -20,8 +20,6 @@ $(".letter-wrapper").css("-webkit-filter",newval);
 
 }
 
- console.log($.cookie("current_time"));
-
 function timeConverter(UNIX_timestamp){
   var a = new Date(UNIX_timestamp * 1000);
   var months = ['january','february','march','april','may','june','july','august','september','october','november','december'];
@@ -201,17 +199,18 @@ function run_clock() {
     
     var elapsed = timeStamp - $.cookie("current_time");
 
-     console.log(elapsed);
+    // console.log(elapsed);
      var lastvisited = timeConverter($.cookie("current_time"));
     // var lastvisited = 'april' + 'fourteen';
 
     for (i = 0; i < lastvisited.length; i++) {
-     console.log(lastvisited[i]);
+    // console.log(lastvisited[i]);
       if (lastvisited[i] != ' ') {
       	var letter = '.letter-wrapper.' + lastvisited[i],
       		to_clone = $(letter).clone();
 
-      	$('.baseline').append(to_clone).removeClass("hide");
+      	$('.baseline').append(to_clone);
+        $('.letter').removeClass("hide");
       }
 
     }

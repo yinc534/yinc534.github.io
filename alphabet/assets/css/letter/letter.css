@@ -173,6 +173,18 @@
 .crossbar-t{width:40px;height:7px;}
 .middle-t{margin-left:15px;}
  
+/*===================U===================*/
+.u-curve{
+	width:35px;height:20px;border-top:0px;
+	border-radius:0px 0px 45px 45px;position:absolute;
+	right:16px;bottom:0px;}
+.u-curve-counter{
+	width:21px;height:14px;background-color:#F8e71C;
+	border-radius:0px 0px 45px 45px;position:absolute;
+	left:7px;top:0px;}
+.left-u{
+	margin-left:-16px;
+}
 
 /*===================V===================*/
 .v-left{top:0px;left:-8px;}

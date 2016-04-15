@@ -8,7 +8,7 @@ function record_time() {
 	var hours = now.getHours();
 	var minutes = now.getMinutes();
   var elapsed = timeStamp - $.cookie("current_time");
-	var current_time = hours + ':' + minutes;
+	var current_time = hours + ' ' + minutes;
 
 	var timeStamp = Math.floor(Date.now() / 1000);
   $.cookie('current_time', current_time);
@@ -32,7 +32,15 @@ function timeConverter(UNIX_timestamp){
   var min = a.getMinutes();
 
   if (year == "2016") {
-    year = "two" + "thousand" + "sixteen" 
+    year = "twenty" + "sixteen" 
+  } else if (year == "2017") {
+    year = "twenty" + "seventeen"
+  } else if (year == "2018") {
+    year = "twenty" + "eighteen"
+  } else if (year == "2019") {
+    year = "twenty" + "nineteen"
+  } else if (year == "2020") {
+    year = "two" + "thousand" + "twenty"
   }
 
   if (hour == "1") {
@@ -201,7 +209,7 @@ function run_clock() {
      console.log(lastvisited[i]);
       if (lastvisited[i] != ' ') {
       	var letter = '.letter-wrapper.' + lastvisited[i],
-      		to_clone = $(letter).clone();
+      		to_clone = $(letter).clone().removeClass("hide");
   	
 
       	$('.baseline').append(to_clone);

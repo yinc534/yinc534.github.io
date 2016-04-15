@@ -181,7 +181,7 @@ function timeConverter(UNIX_timestamp){
     min = "fifty"+" nine";
   } 
   
-  var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min;
+  var time = month + ' ' + date + ' ' + year + ' ' + hour + ' ' + min;
 
   return time;
 }

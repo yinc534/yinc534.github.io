@@ -256,7 +256,7 @@ function run_clock() {
 
       	to_clone = $(letter).clone();
 
-      	$('.baseline').append(to_clone);
+      	$('.content-container').append(to_clone);
 
       }
 

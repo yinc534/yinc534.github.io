@@ -216,5 +216,8 @@
 .short-leg-left-y{width:8px;height:25px;-webkit-transform:skew(-30deg);-moz-transform: skew(-20deg);-o-transform:skew(-20deg);}
 .y-stem{left:5px;top:15px;}
 
+/*===================Z===================*/
+.leg-left-z{width:8px;height:54px;-webkit-transform:skew(-35deg);-moz-transform: skew(-20deg);-o-transform:skew(-20deg);left:12px;}
+
 
 

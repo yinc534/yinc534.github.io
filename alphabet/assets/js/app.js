@@ -218,7 +218,7 @@ function timeConverter(UNIX_timestamp){
   var time = month + ' ' + date + ' ' + year + ' ' + hour + ' ' + min;
 
   //return time;
-
+  var lastvisited = timeConverter($.cookie("current_time"));
   return lastvisited;
 }
 

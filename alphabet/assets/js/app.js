@@ -15,7 +15,7 @@ function record_time() {
 	$.cookie("current_time", timeStamp);
 
 var bluramount = elapsed * .1;
-var newval = "blur(" +bluramount+ "px)";
+var newval = "blur("+bluramount+"px)";
 $(".letter").css("-webkit-filter",newval);
 console.log(newval);
 }

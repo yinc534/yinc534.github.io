@@ -20,7 +20,7 @@ $(".letter-wrapper").css("-webkit-filter",newval);
 
 }
 
-// console.log($.cookie("current_time"));
+ console.log($.cookie("current_time"));
 
 function timeConverter(UNIX_timestamp){
   var a = new Date(UNIX_timestamp * 1000);
@@ -194,7 +194,7 @@ function run_clock() {
     // var lastvisited = 'april' + 'fourteen';
 
     for (i = 0; i < lastvisited.length; i++) {
-      // console.log(lastvisited[i]);
+     console.log(lastvisited[i]);
       if (lastvisited[i] != ' ') {
       	var letter = '.letter-wrapper.' + lastvisited[i],
       		to_clone = $(letter).clone();

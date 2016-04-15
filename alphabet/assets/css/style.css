@@ -15,7 +15,7 @@ body{
 }
 .page-container{position:relative;height:500px;}
 
-.eye-container{ position:fixed; top:50px;}
+.eye-container{ position:fixed; top:5px; left:50%;}
 
 .x-container{ position:absolute; right:30px; top:30px;}
 
@@ -50,14 +50,13 @@ body{
 .baseline{
 	display:inline-block;
 	height:54px;
-	width:600px;
-	background-color:red;
+	width:1200px;
 }
 
 .content-container{
 	display:inline-block;
 	height:54px;
-	width:600px;
+	width:1200px;
 }
 
 .blur-case{

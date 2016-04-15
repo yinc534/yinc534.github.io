@@ -254,9 +254,10 @@ function run_clock() {
       if (lastvisited[i] != ' ') {
       	var letter = '.letter-wrapper.' + lastvisited[i],
 
-      	to_clone = $(letter).clone().css("color", "red");
+      	to_clone = $(letter).clone();
 
-      	$('.content-container').append(to_clone);
+      	$('.baseline').append(to_clone);
+        $('.content-container').hide();
 
       }
 

@@ -2,6 +2,7 @@ body{
 	padding:50px;
 	font-size:0;
 	background-color:#F8E71C;
+	width:1440px;
 }
 
 /*==============wrapper===============*/
@@ -49,7 +50,7 @@ body{
 .baseline{
 	display:inline-block;
 	height:54px;
-	width:1000px;
+	width:1200px;
 }
 
 .blur-case{

@@ -41,6 +41,52 @@ function timeConverter(UNIX_timestamp){
     year = "two" + "thousand" + "twenty"
   }
 
+  if (date == "1") {
+    date = "first";
+  } if (date =="2") {
+    date = "second";
+  } if (date =="3") {
+    date = "third";
+  } if (date =="4") {
+    date = "fourth";
+  } if (date =="5") {
+    date = "fifth";
+  } if (date =="6") {
+    date = "sixth";
+  } if (date =="7") {
+    date = "seventh";
+  } if (date =="8") {
+    date = "eighth"; 
+  } if (date =="9") {
+    date = "ninth";
+  } if (date =="10") {
+    date = "tenth";
+  } if (date == "11") {
+    date = "eleventh";
+  } if (date =="12") {
+    date = "twelfth";
+  } if (date =="13") {
+    date = "thirteenth";
+  } if (date =="14") {
+    date = "fourteenth";
+  } if (date =="15") {
+    date = "fifteenth";
+  } if (date =="16") {
+    date = "sixteenth";
+  } if (date =="17") {
+    date = "seventeenth";
+  } if (date =="18") {
+    date = "eighteenth";
+  } if (date = "19") {
+    date = "nineteenth";
+  } if (date = "20") {
+    date = "twentieth";
+  } if (date = "21") {
+    date = "twenty"+"first";
+  } if (date = "22") {
+    date = "twenty"+"second";
+  }
+
   if (hour == "1") {
     hour = "one";
   } else if (hour =="2") {
@@ -207,12 +253,14 @@ function run_clock() {
     // console.log(lastvisited[i]);
       if (lastvisited[i] != ' ') {
       	var letter = '.letter-wrapper.' + lastvisited[i],
-      		to_clone = $(letter).clone();
+
+      	to_clone = $(letter).clone();
 
       	$('.baseline').append(to_clone);
+
       }
 
-      if (lastvisited[i] == ' ') {
+      if (lastvisited != ' ') {
         $('.letter').removeClass("hide");
       }
 

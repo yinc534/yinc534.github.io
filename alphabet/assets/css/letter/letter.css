@@ -145,6 +145,30 @@
  	background-color:#F8E71C;position:absolute;}
 .r-leg-bottom{position:absolute;top:22px;left:13px;}
 
+/*===================S===================*/
+.s-diag{width:8px;height:15px;
+	-webkit-transform:skew(55deg);
+	-moz-transform:skew(20deg);-o-transform:skew(20deg);
+	position:absolute;top:20px;left:0px;}
+
+.curve-s{
+	width:30px;height:20px;border-top:0px;
+	border-radius:0px 0px 45px 45px;position:absolute;
+	right:16px;bottom:0px;}
+.curve-counter-s{
+	width:16px;height:14px;background-color:#F8e71C;
+	border-radius:0px 0px 45px 45px;position:absolute;
+	left:7px;top:0px;}
+
+.curve-top{
+	width:30px;height:20px;border-top:0px;
+	border-radius:0px 0px 45px 45px;position:absolute;
+	right:16px;bottom:0px;-webkit-transform:rotate(180deg);top:0px;}
+.curve-top-counter{
+	width:16px;height:14px;background-color:#F8e71C;
+	border-radius:0px 0px 45px 45px;position:absolute;
+	left:7px;top:0px;}
+
 /*===================T===================*/
 .crossbar-t{width:40px;height:7px;}
 .middle-t{margin-left:15px;}

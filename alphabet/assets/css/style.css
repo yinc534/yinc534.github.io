@@ -1,5 +1,5 @@
 body{
-	margin:0;
+	margin:0px;
 	padding:50px;
 	font-size:0;
 	background-color:#F8E71C;
@@ -49,7 +49,7 @@ body{
 }
 .baseline{
 	display:inline-block;
-	width:500px;
+	width:1000px;
 	height:54px;
 	
 }

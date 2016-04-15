@@ -31,6 +31,10 @@ function timeConverter(UNIX_timestamp){
   var hour = a.getHours();
   var min = a.getMinutes();
 
+  if (year == "2016") {
+    year = "two" + "thousand" + "sixteen" 
+  }
+
   if (hour == "1") {
     hour = "one";
   } else if (hour =="2") {

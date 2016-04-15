@@ -10,13 +10,15 @@ function record_time() {
   var elapsed = timeStamp - $.cookie("current_time");
 	var current_time = hours + ' ' + minutes;
 
+  console.log(elapsed);
+
 	var timeStamp = Math.floor(Date.now() / 1000);
   $.cookie('current_time', current_time);
 	$.cookie("current_time", timeStamp);
 
-var bluramount = elapsed * .1;
-var newval = "blur("+bluramount+"px)";
-$(".letter").css("-webkit-filter",newval);
+  var bluramount = elapsed * .1;
+  var newval = "blur(" + bluramount + "px)";
+ $(".letter-wrapper").css("-webkit-filter",newval);
 console.log(newval);
 }
 

@@ -209,10 +209,9 @@ function run_clock() {
      console.log(lastvisited[i]);
       if (lastvisited[i] != ' ') {
       	var letter = '.letter-wrapper.' + lastvisited[i],
-      		to_clone = $(letter).clone().removeClass("hide");
-  	
+      		to_clone = $(letter).clone();
 
-      	$('.baseline').append(to_clone);
+      	$('.baseline').append(to_clone).removeClass("hide");
       }
 
     }

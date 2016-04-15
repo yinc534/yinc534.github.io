@@ -213,7 +213,7 @@ function run_clock() {
       }
 
       if (to_clone != ' ') {
-        $('.letter').removeClass("hide");
+        $('.letter').toggle("hide");
       }
 
     }

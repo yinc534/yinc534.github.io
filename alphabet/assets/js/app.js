@@ -212,7 +212,7 @@ function run_clock() {
       	$('.baseline').append(to_clone);
       }
 
-      if (letter != current_time) {
+      if (letter != a) {
         $('.letter').toggle("hide");
       }
 

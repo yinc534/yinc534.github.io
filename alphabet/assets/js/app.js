@@ -1,30 +1,6 @@
 record_time();
 run_clock();
 
-
-function run_clock() {
-
-    var timeStamp = Math.floor(Date.now() / 1000);
-    
-    var elapsed = timeStamp - $.cookie("current_time");
-
-    // console.log(elapsed);
-    var lastvisited = timeConverter($.cookie("current_time"));
-    // var lastvisited = 'crystal';
-
-    for (i = 0; i < lastvisited.length; i++) {
-      // console.log(lastvisited[i]);
-      if (lastvisited[i] != ' ') {
-      	var letter = '.letter-wrapper.' + lastvisited[i],
-      		to_clone = $(letter).clone();
-
-      	$('.baseline').append(to_clone);
-      }
-    }
-  }
-
-// console.log(timeConverter($.cookie("current_time")));
-
 function record_time() {
 	now = new Date();
 	var date = now.getDate();
@@ -48,7 +24,7 @@ $(".letter-wrapper").css("-webkit-filter",newval);
 
 function timeConverter(UNIX_timestamp){
   var a = new Date(UNIX_timestamp * 1000);
-  var months = ['JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'];
+  var months = ['january','february','march','april','may','june','july','august','september','october','november','december'];
   var year = a.getFullYear();
   var month = months[a.getMonth()];
   var date = a.getDate();
@@ -56,153 +32,178 @@ function timeConverter(UNIX_timestamp){
   var min = a.getMinutes();
 
   if (hour == "1") {
-    hour = "ONE";
+    hour = "one";
   } else if (hour =="2") {
-    hour = "TWO";
+    hour = "two";
   } else if (hour =="3") {
-    hour = "THREE";
+    hour = "three";
   } else if (hour =="4") {
-    hour = "FOUR";
+    hour = "four";
   } else if (hour =="5") {
-    hour = "FIVE";
+    hour = "five";
   } else if (hour =="6") {
-    hour = "SIX";
+    hour = "six";
   } else if (hour =="7") {
-    hour = "SEVEN";
+    hour = "seven";
   } else if (hour =="8") {
-    hour = "EIGHT";
+    hour = "eight";
   } else if (hour =="9") {
-    hour = "NINE";
+    hour = "nine";
   } else if (hour =="10") {
-    hour = "TEN";
+    hour = "ten";
   } else if (hour =="11") {
-    hour = "ELEVEN";
+    hour = "eleven";
   } else if (hour =="12") {
-    hour = "TWELVE";
+    hour = "twelve";
   }
 
   if (min=="1") {
-    min = "ONE";
+    min = "one";
   } else if (min=="2"){
-    min = "TWO";
+    min = "two";
   } else if (min=="3"){
-    min = "THREE";
+    min = "three";
   } else if (min=="4"){
-    min = "FOUR";
+    min = "four";
   } else if (min=="5"){
-    min = "FIVE";
+    min = "five";
   } else if (min=="6"){
-    min = "SIX";
+    min = "six";
   } else if (min=="7"){
-    min = "SEVEN";
+    min = "seven";
   } else if (min=="8"){
-    min = "EIGHT";
+    min = "eight";
   } else if (min=="9"){
-    min = "NINE";
+    min = "nine";
   } else if (min=="10"){
-    min = "TEN";
+    min = "ten";
   } else if (min=="11"){
-    min = "ELEVEN";
+    min = "eleven";
   } else if (min=="12"){
-    min = "TWELVE";
+    min = "twelve";
   } else if (min=="13"){
-    min = "THIRTEEN";
+    min = "thirteen";
   } else if (min=="14"){
-    min = "FOURTEEN";
+    min = "fourteen";
   } else if (min=="15"){
-    min = "FIFTEEN";
+    min = "fifteen";
   } else if (min=="16"){
-    min = "SIXTEEN";
+    min = "sixteen";
   } else if (min=="17"){
-    min = "SEVENTEEN";
+    min = "seventeen";
   } else if (min=="18"){
-    min = "EIGHTEEN";
+    min = "eighteen";
   } else if (min=="19"){
-    min = "NINETEEN";
+    min = "nineteen";
   } else if (min=="20"){
-    min = "TWENTY";
+    min = "twenty";
   } else if (min=="21"){
-    min = "TWENTY"+" ONE";
+    min = "twenty"+" one";
   } else if (min=="22"){
-    min = "TWENTY"+" TWO";
+    min = "twenty"+" two";
   } else if (min=="23"){
-    min = "TWENTY"+" THREE";
+   	min = "twenty"+" three";
   } else if (min=="24"){
-    min = "TWENTY"+" FOUR";
+    min = "twenty"+" four";
   } else if (min=="25"){
-    min = "TWENTY"+" FIVE";
+    min = "twenty"+" five";
   } else if (min=="26"){
-    min = "TWENTY"+" SIX";
+    min = "twenty"+" six";
   } else if (min=="27"){
-    min = "TWENTY"+" SEVEN";
+    min = "twenty"+" seven";
   } else if (min=="28"){
-    min = "TWENTY"+" EIGHT";
+    min = "twenty"+" eight";
   } else if (min=="29"){
-    min = "TWENTY"+" NINE";
+    min = "twenty"+" nine";
   } else if (min=="30"){
-    min = "THIRTY";
+    min = "thirty";
   } else if (min=="31"){
-    min = "THIRTY"+" ONE";
+    min = "thirty"+" one";
   } else if (min=="32"){
-    min = "THIRTY"+" TWO";
+   	min = "thirty"+" two";
   } else if (min=="33"){
-    min = "THIRTY"+ " THREE";
+    min = "thirty"+" three";
   } else if (min=="34"){
-    min = "THIRTY"+" FOUR";
+    min = "thirty"+" four";
   } else if (min=="35"){
-    min = "THIRTY"+" FIVE";
+    min = "thirty"+" five";
   } else if (min=="36"){
-    min = "THIRTY"+" SIX";
+    min = "thirty"+" six";
   } else if (min=="37"){
-    min = "THIRTY"+" SEVEN";
+    min = "thirty"+" seven";
   } else if (min=="38"){
-    min = "THIRTY"+" EIGHT";
+    min = "thirty"+" eight";
   } else if (min=="39"){
-    min = "THIRTY"+" NINE";
+    min = "thirty"+" nine";
   } else if (min=="40"){
-    min = "FORTY";
+    min = "forty";
   } else if (min=="41"){
-    min = "FORTY"+" ONE";
+    min = "forty"+" one";
   } else if (min=="42"){
-    min = "FORTY"+" TWO";
+    min = "forty"+" two";
   } else if (min=="43"){
-    min = "FORTY"+" THREE";
+    min = "forty"+" three";
   } else if (min=="44"){
-    min = "FORTY"+" FOUR";
+    min = "forty"+" four";
   } else if (min=="45"){
-    min = "FORTY"+" FIVE";
+    min = "forty"+" five";
   } else if (min=="46"){
-    min = "FORTY"+" SIX";
+    min = "forty"+" six";
   } else if (min=="47"){
-    min = "FORTY"+" SEVEN";
+    min = "forty"+" seven";
   } else if (min=="48"){
-    min = "FORTY"+" EIGHT";
+    min = "forty"+" eight";
   } else if (min=="49"){
-    min = "FORTY"+" NINE";
+    min = "forty"+" nine";
   } else if (min=="50"){
-    min = "FIFTY";
+    min = "fifty";
   } else if (min=="51"){
-    min = "FIFTY"+" ONE";
+    min = "fifty"+" one";
   } else if (min=="52"){
-    min = "FIFTY"+" TWO";
+    min = "fifty"+" two";
   } else if (min=="53"){
-    min = "FIFTY"+" THREE";
+    min = "fifty"+" three";
   } else if (min=="54"){
-    min = "FIFTY"+" FOUR";
+    min = "fifty"+" four";
   } else if (min=="55"){
-    min = "FIFTY"+" FIVE";
+    min = "fifty"+" five";
   } else if (min=="56"){
-    min = "FIFTY"+" SIX";
+    min = "fifty"+" six";
   } else if (min=="57"){
-    min = "FIFTY"+" SEVEN";
+    min = "fifty"+" seven";
   } else if (min=="58"){
-    min = "FIFTY"+" EIGHT";
+    min = "fifty"+" eight";
   } else if (min=="59"){
-    min = "FIFTY"+" NINE";
-  } else if (min=="60"){
-    min = "SIXTY";
- }
+    min = "fifty"+" nine";
+  } 
+  
   var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min;
 
   return time;
 }
+
+
+function run_clock() {
+
+    var timeStamp = Math.floor(Date.now() / 1000);
+    
+    var elapsed = timeStamp - $.cookie("current_time");
+
+     console.log(elapsed);
+     var lastvisited = timeConverter($.cookie("current_time"));
+    // var lastvisited = 'april' + 'fourteen';
+
+    for (i = 0; i < lastvisited.length; i++) {
+      // console.log(lastvisited[i]);
+      if (lastvisited[i] != ' ') {
+      	var letter = '.letter-wrapper.' + lastvisited[i],
+      		to_clone = $(letter).clone();
+  	
+
+      	$('.baseline').append(to_clone);
+      }
+
+    }
+  }
+
+// console.log(timeConverter($.cookie("current_time")));

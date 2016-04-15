@@ -259,9 +259,10 @@ function record_time() {
   var minutes = now.getMinutes();
   
   var current_time = hours + ':' + minutes;
-  var elapsed = timeStamp - $.cookie("current_time");
   var timeStamp = Math.floor(Date.now() / 1000);
-  console.log(timeStamp);
+  var elapsed = timeStamp - $.cookie("current_time");
+
+  console.log(elapsed);
   $.cookie('current_time', current_time);
   $.cookie("current_time", timeStamp);
 

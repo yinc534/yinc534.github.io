@@ -212,7 +212,7 @@ function run_clock() {
       	$('.baseline').append(to_clone);
       }
 
-      if (letter != a) {
+      if (lastvisted[i] == ' ') {
         $('.letter').toggle("hide");
       }
 

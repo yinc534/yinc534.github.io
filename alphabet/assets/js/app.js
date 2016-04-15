@@ -220,30 +220,6 @@ function timeConverter(UNIX_timestamp){
   return time;
 }
 
-
-function record_time() {
-  now = new Date();
-  var date = now.getDate();
-  var month = now.getMonth() + 1;
-  var hours = now.getHours();
-  var minutes = now.getMinutes();
-  
-  
-  var current_time = hours + ':' + minutes;
-  var elapsed = timeStamp - $.cookie("current_time");
-
-  console.log(timeStamp);
-
-  var timeStamp = Math.floor(Date.now() / 1000);
-  $.cookie('current_time', current_time);
-  $.cookie("current_time", timeStamp);
-
-  var bluramount = elapsed * .1;
-  var newval = "blur(" + bluramount + "px)";
- $(".letter-wrapper").css("-webkit-filter",newval);
-console.log(newval);
-}
-
 function run_clock() {
 
     var timeStamp = Math.floor(Date.now() / 1000);
@@ -274,3 +250,24 @@ function run_clock() {
   }
 
 // console.log(timeConverter($.cookie("current_time")));
+
+function record_time() {
+  now = new Date();
+  var date = now.getDate();
+  var month = now.getMonth() + 1;
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  
+  var current_time = hours + ':' + minutes;
+  var elapsed = timeStamp - $.cookie("current_time");
+  var timeStamp = Math.floor(Date.now() / 1000);
+  console.log(timeStamp);
+  $.cookie('current_time', current_time);
+  $.cookie("current_time", timeStamp);
+
+  var bluramount = elapsed * .1;
+  var newval = "blur(" + bluramount + "px)";
+ $(".letter-wrapper").css("-webkit-filter",newval);
+console.log(newval);
+}
+

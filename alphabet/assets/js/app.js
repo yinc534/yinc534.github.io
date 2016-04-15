@@ -254,7 +254,7 @@ function run_clock() {
       if (lastvisited[i] != ' ') {
       	var letter = '.letter-wrapper.' + lastvisited[i],
 
-      	to_clone = $(letter).clone();
+      	to_clone = $(letter).clone().css("color", "red");
 
       	$('.content-container').append(to_clone);
 

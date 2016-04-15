@@ -210,7 +210,7 @@ function run_clock() {
       		to_clone = $(letter).clone();
 
       	$('.baseline').append(to_clone);
-        //$('.letter').removeClass("hide");
+        lastvisited[i].$('.letter').removeClass("hide");
       }
 
     }

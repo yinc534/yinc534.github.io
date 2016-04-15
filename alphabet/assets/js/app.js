@@ -228,8 +228,9 @@ function record_time() {
   var hours = now.getHours();
   var minutes = now.getMinutes();
   
-  var elapsed = timeStamp - $.cookie("current_time");
+  
   var current_time = hours + ':' + minutes;
+  var elapsed = timeStamp - $.cookie("current_time");
 
   console.log(timeStamp);
 

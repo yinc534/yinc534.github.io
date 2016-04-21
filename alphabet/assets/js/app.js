@@ -67,6 +67,24 @@ function timeConverter(UNIX_timestamp){
     date = "twenty"+"first";
   } if (date = "22") {
     date = "twenty"+"second";
+  } if (date = "23") {
+    date = "twenty"+"third";
+  } if (date = "24") {
+    date = "twenty"+"fourth";
+  } if (date = "25") {
+    date = "twenty"+"fifth";
+  } if (date = "26") {
+    date = "twenty"+"sixth";
+  } if (date = "27") {
+    date = "twenty"+"seventh";
+  } if (date = "28") {
+    date = "twenty"+"eight";
+  } if (date = "29") {
+    date = "twenty"+"ninth";
+  } if (date = "30") {
+    date = "thirty";
+  } if (date = "31") {
+    date = "thirty"+"first";
   }
 
   if (hour == "1") {
@@ -224,7 +242,9 @@ function timeConverter(UNIX_timestamp){
 function run_clock() {
 
     var timeStamp = Math.floor(Date.now() / 1000);
-    
+
+console.log(timeStamp);
+
     var elapsed = timeStamp - $.cookie("current_time");
 
     // console.log(elapsed);

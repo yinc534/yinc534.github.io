@@ -1,0 +1,165 @@
+body{
+	background-color:#d8d8d8;
+}
+
+p{
+	font-family:Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-size:32px;
+	width:750px;
+	line-height:38px;
+	color:black;
+}
+
+.random{
+	font-size:24px;
+	font-family:Futura Std, 'Trebuchet MS', Arial, sans-serif;
+	font-weight:light;
+	color:white;
+}
+
+.random{
+	left:10px;
+	top:10px;
+	position:absolute;
+}
+
+p.play{
+	font-size:30px;
+	position:absolute;
+	top:-28px;
+}
+
+p.play-4{padding-left:5px;}
+
+p.play-5{padding-left:18px;}
+
+p.play-7{padding-left:30px;}
+
+p.play-8{padding-left:35px;}
+
+p.play-9{padding-left:40px;}
+
+p.play-10{padding-left:55px;}
+
+.hidden{
+	display:none;
+}
+
+.paragraph-container{
+	padding-left:320px;
+	padding-top:150px;
+	position:relative;
+}
+
+a{
+	text-decoration: none;
+	-moz-transition: none;
+    -webkit-transition: none;
+    transition: none;
+    color:black;
+	
+}
+
+a:visited{
+	color:black;
+}
+
+a:hover{
+	color:white;
+}
+
+
+.i-1{left:328px;bottom:496px;}
+
+.i-2{left:648px;bottom:496px;}
+
+.i-3{left:405px;bottom:458px;}
+
+.of{left:1025px;bottom:458px;}
+
+.to{left:730px;bottom:420px;}
+
+.that{left:575px;bottom:496px;}
+
+.what{left:328px;bottom:458px;}
+
+.mind{left:490px;bottom:420px;}
+
+.was{left:425px;bottom:458px;}
+
+.the{left:710px;bottom:458px;}
+
+.the-2{left:318px;bottom:420px;}
+
+.could{left:662px;bottom:496px;}
+
+.human{left:384px;bottom:420px;}
+
+.power{left:925px;bottom:458px;}
+
+.using{left:620px;bottom:458px;}
+
+.couldnt{left:348px;bottom:496px;}
+
+.believe{left:468px;bottom:496px;}
+
+.actually{left:750px;bottom:496px;}
+
+.reading{left:495px;bottom:458px;}
+
+.according{left:580px;bottom:420px;}
+
+.understand{left:880px;bottom:496px;}
+
+.incredible{left:762px;bottom:458px;}
+
+
+
+
+.redbox{position:absolute;height:44px;
+pointer-events: none;}
+
+.redbox-1{width:10px;background-color:black;}
+
+.redbox-2{width:40px;background-color:black;}
+
+.redbox-3{width:60px;background-color:black;}
+
+.redbox-4{width:70px;background-color:black;}
+
+.redbox-5{width:94px;background-color:#50E3C2;}
+
+.redbox-7{width:112px;background-color: #F8E71C}
+
+.redbox-8{width:125px;background-color:#B8E986;}
+
+.redbox-9{width:145px;background-color:#C286E9;}
+
+.redbox-10{width:159px;background-color:#F5A623;}
+
+/*=========================================*/
+/*=========================================*/
+/*=========================================*/
+
+.outer {
+  position: relative;
+}
+
+.outer:hover .inner {
+  display: inline-block;
+}
+
+
+.inner {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  width:50px;
+  height:50px;
+  background-color: yellow;
+  display: none;
+}
+
+
+

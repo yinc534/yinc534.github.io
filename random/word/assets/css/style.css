@@ -1,0 +1,88 @@
+body{
+	background-color:#F8E71C;
+	font-family:Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-size:72px;
+	margin-top:20%;
+	text-align: center;
+}
+.random{
+	font-size:24px;
+	font-family:Futura Std, 'Trebuchet MS', Arial, sans-serif;
+	font-weight:light;
+	color:white;
+}
+
+.random{
+	left:10px;
+	top:10px;
+	position:absolute;
+}
+
+.randomize{
+	border:none;
+	background-color:white;
+}
+
+.background-words{
+
+	text-align:left;
+}
+
+.bg{
+	font-size:12px;
+	color:#AFAFAF;
+}
+
+#jumbled-word, #word{
+	margin-top:-15%;
+}
+
+.input-check{
+	font-size:18px;
+}
+.input{
+	width:300px;
+	height:40px;
+	font-size:32px;
+}
+
+p{
+	font-family:Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-size:32px;
+	width:750px;
+	line-height:38px;
+	color:black;
+}
+
+.unjumbled{
+	color:blue;
+}
+
+.hidden{
+	display:none;
+}
+
+.paragraph-container{
+	padding-left:320px;
+	padding-top:150px;
+	position:relative;
+}
+
+a{
+	text-decoration: none;
+	-moz-transition: none;
+    -webkit-transition: none;
+    transition: none;
+	
+}
+
+a:hover{
+	color:white;
+}
+
+a:visited{
+	color:black;
+}
+
+
+

@@ -3,3 +3,5 @@ $(".random").each(function() {
   
 $(this).css("left",Math.floor(Math.random()*$(window).width()));
 });
+
+

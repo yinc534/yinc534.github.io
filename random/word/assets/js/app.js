@@ -41,12 +41,12 @@ current_word++;
     // $("#jumbled-word").html(words[current_word]);
  
 } else {
-
+    var inside = (words[current_word].slice(1,(words[current_word].length-1)));
+    inside = inside.shuffle();
     var jumbled = words[current_word][0] + inside + words[current_word][words[current_word].length-1];
+    $("#jumbled-word").html(jumbled);
     $(".random").text("Try again!").css("color","red").fadeIn();
     $("#jumbled-word").css("color","red");
-    inside = inside.shuffle();
-    $("#jumbled-word").html(jumbled);
 
     }
 }
@@ -56,8 +56,9 @@ $(window).keypress(function(e) {
         checkWord();
         $('input:text').focus(function(){
             $(this).val('');
-        });
 
+        
+        });
      }
 })
 
@@ -67,6 +68,7 @@ $(".input-check").click(function(e) {
 
         $('input:text').focus(function(){
             $(this).val('');
+        
         });
 
 });

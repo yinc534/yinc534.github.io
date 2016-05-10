@@ -2,15 +2,15 @@
 <html>
   <head>
     <title>Random</title>
-    <link href="../assets/css/style.css" media="all" rel="stylesheet" />
+    <link href="../../assets/css/style.css" media="all" rel="stylesheet" />
     <link rel="shortcut icon" href="" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
   <body>
     
-      <a href="../index.html" class="title">
+      <a href="../../word/7-letter/index.html" class="title-level">
         <div class="unjumble-container" id="unjumb_container">
-          <span class="outer">paly<span class="inner-title">play</span></span>
+          <span class="outer">lveel 3<span class="inner-title" style="top:-2px">level 3</span></span> 
         </div>
       </a>
 
@@ -23,14 +23,16 @@
 
 $(document).ready(function(){
     $('.unjumble-container').click(function(e){
+
       e.preventDefault();
       
-      $('#unjumb_container').delay(500).slideUp(300).css("color","green");
-      console.log("hello");
-       setTimeout(function(){window.location.href='../index.html'},1000);
+      $('#unjumb_container').slideUp(100).css("color","green");
+
+       setTimeout(function(){window.location.href='../../word/7-letter/index.html'},500);
 
     });
 });
+
 
 </script>
 

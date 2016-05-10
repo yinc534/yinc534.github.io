@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random</title>
+    <link href="../assets/css/style.css" media="all" rel="stylesheet" />
+    <link rel="shortcut icon" href="" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body>
+    
+      <a href="../index.html" class="title">
+        <div class="unjumble-container" id="unjumb_container">
+          <span class="outer">paly<span class="inner-title">play</span></span>
+        </div>
+      </a>
+
+  </body>
+
+</html>
+
+<script>
+
+
+$(document).ready(function(){
+    $('.unjumble-container').click(function(){
+      
+      $('#unjumb_container').delay(500).slideUp(3000).css("color","green");
+
+    });
+});
+
+</script>
+
+

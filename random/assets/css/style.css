@@ -10,9 +10,36 @@ p{
 	color:black;
 }
 
-.random{font-size:24px;
+.title{
+	font-family:Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-size:310px;
+	color:black;
+	position: relative;
+}
+
+.unjumble-container{
+	background-color:#F8E71C;
+	width:700px;
+	height:200px;
+	padding-left:70px;
+	padding-bottom:280px;
+	margin-left:350px;
+	margin-top:150px;
+	position: relative;
+	z-index:3;
+
+}
+
+.opacity{
+	opacity:0.5;
+}
+
+.random{
+	font-size:24px;
 	font-family:Futura Std, 'Trebuchet MS', Arial, sans-serif;
 	font-weight:light;color:white;
+	position:absolute;
+	z-index:1;
 }
 
 .random{left:10px;top:10px;position:absolute;}
@@ -38,12 +65,26 @@ a:visited{
 	color:black;
 }
 
+.random{
+	font-size:24px;
+	font-family:Futura Std, 'Trebuchet MS', Arial, sans-serif;
+	font-weight:light;
+	color:white;
+	position:absolute;
+	width:110px;
+	height:32px;
+	z-index:5;
+}
 
 .outer {
   position: relative;
 }
 
 .outer:hover .inner {
+  display: inline-block;
+}
+
+.outer:hover .inner-title {
   display: inline-block;
 }
 
@@ -55,6 +96,18 @@ a:visited{
   height:44px;
   display: none;
   pointer-events: none;
+}
+
+.inner-title{
+	background-color:#F8E71C;
+	position: absolute;
+	width:700px;
+	height:400px;
+  	top:-4px;
+  	left:0;
+  	right:0;
+  	display: none;
+  	pointer-events: none;
 }
 
 .inner-1:hover{width:10px;background-color:black;}

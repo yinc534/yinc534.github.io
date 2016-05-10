@@ -28,7 +28,7 @@ if ($("input").val() == words[current_word]) {
     $("#jumbled-word").css("color","green");
     $("#jumbled-word").html(words[current_word]);
     $( "div.jumbled-word" ).slideUp( 300 ).delay( 100 ).fadeIn( 300 ).css("color","black");
-    $(".random").text("Nice one!").css("color","green").fadeOut(500).fadeIn(500);
+    $(".random").text("Nice one!").css("color","green").fadeOut(500).fadeIn(500).removeClass("opacity");
    
 
 current_word++;
@@ -45,7 +45,7 @@ current_word++;
     inside = inside.shuffle();
     var jumbled = words[current_word][0] + inside + words[current_word][words[current_word].length-1];
     $("#jumbled-word").html(jumbled);
-    $(".random").text("Try again!").css("color","red").fadeIn();
+    $(".random").text("Try again!").css("color","red").removeClass("opacity").fadeOut(500).fadeIn(500);
     $("#jumbled-word").css("color","red");
 
     }

@@ -239,17 +239,20 @@ function timeConverter(UNIX_timestamp){
 
 }
 
+var string_to_print = '';
+
 function run_clock() {
 
     var timeStamp = Math.floor(Date.now() / 1000);
 
-console.log(timeStamp);
+    console.log(timeStamp);
 
     var elapsed = timeStamp - $.cookie("current_time");
 
     // console.log(elapsed);
-     var lastvisited = timeConverter($.cookie("current_time"));
-    // var lastvisited = 'april' + 'fourteen';
+    var lastvisited = timeConverter($.cookie("current_time"));
+    // var lastvisited = 'april' + ' fourteen';
+    
 
     for (i = 0; i < lastvisited.length; i++) {
     // console.log(lastvisited[i]);
@@ -257,17 +260,18 @@ console.log(timeStamp);
       	var letter = '.letter-wrapper.' + lastvisited[i],
 
       	to_clone = $(letter).clone();
-
-      	$('.baseline').append(to_clone);
-        $('.content-container').hide();
-
+        string_to_print += to_clone.html();
+        
       }
-
       if (lastvisited != ' ') {
         $('.letter').removeClass("hide");
       }
 
     }
+
+    $('.date-container').append(string_to_print);
+    $('.content-container').hide(); 
+
   }
 
 // console.log(timeConverter($.cookie("current_time")));

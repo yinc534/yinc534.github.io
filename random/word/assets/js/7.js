@@ -39,7 +39,7 @@ current_word++;
     $("#jumbled-word").html(jumbled);
 
 if (current_word == words.length-1) {
-    setTimeout(function(){window.location.href='../../index.html'},2000);
+    setTimeout(function(){window.location.href='../../levels/4/index.html'},2000);
 }
 
     

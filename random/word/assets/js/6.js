@@ -1,6 +1,6 @@
 var current_word = 0;
 
-var words = ['actually', 'research', 'sentence', 'mountain', 'remember', 'happened', 'building'];
+var words = ['matter', 'letter', 'itself', 'forest', 'region', 'member', 'sudden'];
 
 String.prototype.shuffle = function () {
     var a = this.split(""),
@@ -39,7 +39,7 @@ current_word++;
     $("#jumbled-word").html(jumbled);
 
 if (current_word == words.length-1) {
-    setTimeout(function(){window.location.href='../../levels/4/index.html'}, 3000);
+    setTimeout(function(){window.location.href='../../levels/3/index.html'}, 3000);
 }
 
     

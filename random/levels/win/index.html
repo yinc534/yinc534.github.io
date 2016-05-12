@@ -10,9 +10,9 @@
     
       <a href="../../word/10-letter/index.html" class="title-level">
         <div class="unjumble-container" id="unjumb_container" style="padding-right:100px">
-          <span class="outer" style="width:800px; position:absolute; margin-left:-70px;top:50px">yuo win!<span class="inner-title" style="top:0px">you </span></span> 
+          <span class="outer" style="width:800px; position:absolute; margin-left:-70px;top:50px">yuo win!<span class="inner-title" style="top:0px;height:250px">you win!</span></span> 
         </div>
-      </a>
+      </a>`
 
   </body>
 
@@ -22,7 +22,17 @@
 
 window.onload = function(){
 
-  $( "body" ).addClass( "bgfun" );
+  $("body").addClass("bgfun");
+  $(".inner-title").addClass("bgfun");
+
+  $(".random").each(function() {
+  $(this).css("top", Math.floor(Math.random()*$(window).height()));
+  
+  $(this).css("left",Math.floor(Math.random()*$(window).width()));
+  });
+
+
+
 }
 
 
@@ -38,6 +48,8 @@ $(document).ready(function(){
 
     });
 });
+
+
 
 
 

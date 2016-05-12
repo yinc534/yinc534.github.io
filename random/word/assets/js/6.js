@@ -27,21 +27,21 @@ if ($("input").val() == words[current_word]) {
     
     $("#jumbled-word").html(words[current_word]);
     $("#jumbled-word").css("color","green").delay(100);
-    $("div.jumbled-word").slideUp(300).delay(100).fadeIn(300).css("color","black");
-    $(".random").text("Nice one!").css("color","green").fadeOut(500).fadeIn(500).removeClass("opacity");
-   
-
-current_word++;
+    $("div.jumbled-word").slideUp(300, function() {
+        current_word++;
 
     var inside = (words[current_word].slice(1,(words[current_word].length-1)));
     inside = inside.shuffle();
     var jumbled = words[current_word][0] + inside + words[current_word][words[current_word].length-1];
     $("#jumbled-word").html(jumbled);
 
-if (current_word == words.length-1) {
-    setTimeout(function(){window.location.href='../../levels/3/index.html'}, 3000);
-}
+    }).delay(100).fadeIn(300).css("color","black");
+    $(".random").text("Nice one!").css("color","green").fadeOut(500).fadeIn(500).removeClass("opacity");
+   
 
+if (current_word == words.length-1) {
+    setTimeout(function(){window.location.href='../../levels/4/index.html'},2000);
+}
     
  
 } else {

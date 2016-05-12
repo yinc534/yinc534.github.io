@@ -9,7 +9,7 @@
   <body>
     
       <a href="../index.html" class="title">
-        <div class="unjumble-container" id="unjumb_container">
+        <div class="unjumble-container" id="unjumb_container" style="top:-50px; position:absolute">
           <span class="outer">paly<span class="inner-title" style="background-color:#fff;">play</span></span>
         </div>
       </a>
@@ -20,6 +20,9 @@
 
 <script>
 
+window.onload = function() {
+  $("body").fadeIn(2000);
+}
 
 $(document).ready(function(){
     $('.unjumble-container').click(function(e){

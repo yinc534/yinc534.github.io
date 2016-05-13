@@ -40,7 +40,8 @@ if ($("input").val() == words[current_word]) {
    
 
 if (current_word == words.length-1) {
-    setTimeout(function(){window.location.href='../../levels/4/index.html'},2000);
+
+    setTimeout(function(){window.location.href='../../levels/2/index.html'},2000);
 }
     
  

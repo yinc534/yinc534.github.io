@@ -1,0 +1,30 @@
+body {
+  background-color: #ccc;
+  font-family: sans-serif;
+}
+
+.currency {
+  color: black;
+  margin-left:100px;
+  font-size: 100px;
+  display:inline-block;
+}
+
+.currency:hover{
+  color:yellow;
+}
+
+#currency{
+  display:inline-block;
+  background-color:yellow;
+}
+
+h1 {
+  font-size: 50px;
+  margin-left:100px;
+}
+
+h2 {
+  font-size: 50px;
+}
+

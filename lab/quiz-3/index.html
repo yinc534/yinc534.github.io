@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Quiz 3</title>
-    <link href="assets/css/style.css" media="all" rel="stylesheet" />
-    <link rel="shortcut icon" href="" />
+    <title></title>
+    <link href="assets/css/quiz.css" media="all" rel="stylesheet" />
+      <script language="javascript" type="text/javascript" src="assets/js/quiz3.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <div class="wallet" data-value="2222 USD">
-      <div class="rate">
-        <ul class="conversion-rate">
-          <li class="euro" data-value="0.88 EU" class="exchange" id="eu">EU</li>
-          <li class="yen" data-value="111.50 JPY" class="exchange" id="jpy">JPY</li>
-          <li class="gbp" data-value="0.69 GBP" class="exchange" id="gdp">GBP</li>
-        </ul>
-      </div>
-      <div class="show-value"></div>
-    </div>
-
-    <script src="assets/js/quiz.js"></script>
+<h1> $2000  = <p id="currency"> </p> </h1>
+<div class="currency" onclick="convert_currency(wallet, conversion_rates[0])"><p id="currency-euro"> &euro; </p></div>
+  <div class="currency" onclick="convert_currency(wallet, conversion_rates[1]) "><p id="currency-yen"> &yen; </p></div>
+  <div class="currency" onclick="convert_currency(wallet, conversion_rates[2])"> <p id="currency-gpb"> &pound; </p></div>
 
   </body>
 </html>

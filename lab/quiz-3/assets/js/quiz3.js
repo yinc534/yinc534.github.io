@@ -1,4 +1,3 @@
-
 var wallet = 2000;
 var converted_wallet = 0;
 var conversion_rates = [1.13, 0.0090, 1.4];

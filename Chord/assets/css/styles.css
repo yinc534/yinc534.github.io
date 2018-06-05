@@ -6,11 +6,16 @@ a{
 	font-size: 20px;
 }
 
+a:visited{
+	color:black;
+}
+
 body{
 	
 	text-align:center;
 	position:relative;
 	padding:50px;
 	vertical-align: center;
+	color:black;
 }
 

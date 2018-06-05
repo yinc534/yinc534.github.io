@@ -1,0 +1,24 @@
+a{
+	
+	color:white;
+	font-family:sans-serif;
+	vertical-align: center;
+}
+
+body{
+	
+	text-align:center;
+	padding:150px;
+	position:relative;
+	vertical-align: center;
+}
+
+.button{
+	background-color:#4B51F7;
+	padding:10px;
+	width:180px;
+	height:20px;
+	border-radius:50px;
+	vertical-align: center;
+
+}
